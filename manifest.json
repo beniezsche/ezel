@@ -1,0 +1,19 @@
+{
+    "manifest_version" : 3,
+    "name" : "Ezel",
+    "description": "Extention to filter browser history",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "something.png"
+    },
+    "permissions": [
+        "history",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
