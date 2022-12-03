@@ -10,10 +10,18 @@
     "permissions": [
         "history",
         "tabs",
-        "activeTab"
+        "activeTab",
+        "bookmarks"
     ],
     "host_permissions": [
         "http://*/*",
         "https://*/*"
-    ]
+    ],
+    "chrome_url_overrides" : {
+        "newtab": "hello.html"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
 }
